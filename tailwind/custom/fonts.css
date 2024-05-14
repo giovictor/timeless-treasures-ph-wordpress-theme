@@ -3,3 +3,18 @@
  *
  * These will be added immediately before Tailwind’s `base` layer.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+ body {
+	font-family: 'Chivo', sans-serif !important;
+ }
+
+@font-face {
+	font-family: 'Krylon';
+	src: url('../theme/assets/fonts/Krylon-Regular.otf') format('opentype'),
+	url('../theme/assets/fonts/Krylon-Regular.woff') format('woff');
+}
+
+ .secondary-font {
+	font-family: 'Krylon', sans-serif;
+ }

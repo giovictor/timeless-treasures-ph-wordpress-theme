@@ -1,0 +1,155 @@
+/*!
+Theme Name: timelesstreasuresph
+Theme URI: https://underscoretw.com/
+Author: Gio Victor Rodriguez
+Author URI: https://github.com/giovictor
+Description: Timeless Treasures PH's website custom Wordpress theme
+Version: 0.1.0
+Tested up to: 6.2
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: timeless-treasures-ph
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+timelesstreasuresph is based on _tw https://underscoretw.com/, (C) 2021-2023 Greg Sullivan
+_tw is distributed under the terms of the GNU GPL v2 or later.
+
+_tw is based on Underscores https://underscores.me/ and Varia https://github.com/Automattic/themes/tree/master/varia, (C) 2012-2023 Automattic, Inc.
+Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
+*/
+
+#masthead {
+	background-image: url('../theme/assets/images/banner.jpg');
+}
+
+.color-layer {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.custom-logo-link {
+	display: inline-block;
+	width: 208px;
+	height: 191px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu .menu-item {
+	margin-right: 60px;
+	color: #F7F1F1;
+	font-size: 18px;
+}
+
+.site-description {
+	color: #F7F1F1;
+	font-size: 65px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.shop-now {
+	background-color: #5B463D;
+	font-size: 18px;
+	transition: all ease-out 0.5s;
+}
+
+.shop-now:hover {
+	background-color: #F7F1F1;
+	color: #5B463D;
+	border: solid #5B463D 3px;
+}
+
+#services h3 {
+	color:#5B463D;
+	font-size: 54px;
+}
+
+.service {
+	height: 594px;
+	color: #ffffff;
+	font-size: 36px;
+	border-radius: 80%;
+}
+
+.service .overlay {
+	background-color: rgba(93, 72, 50, 0.65);
+	transition: all ease-in-out 0.5s;
+}
+
+.service:hover .overlay {
+	background-color: rgba(93, 72, 50, 0.9);
+}
+
+.service:nth-child(1) {
+	background-image: url('../theme/assets/images/customizable-gifts-and-souvenirs-bg.jpg');
+}
+
+.service:nth-child(2) {
+	background-image: url('../theme/assets/images/event-styling-bg.jpg');
+}
+
+.service:nth-child(3) {
+	background-image: url('../theme/assets/images/rentals-bg.jpg');
+}
+
+#about-us {
+	background-color: #F7F1F1;
+}
+
+#about-us h3 {
+	color:#5B463D;
+	font-size: 54px;
+}
+
+#about-us p {
+	color:#5B463D;
+	font-size: 30px;
+}
+
+#colophon {
+	background-color: #F7F1F1;
+	height: 643px;
+}
+
+.footer-menu {
+	height: 210px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-menu > .menu-item {
+	margin-bottom: 15px;
+	color: #5B463D;
+	font-size: 18px;
+}
+
+.follow-us-on {
+	font-family: 'Krylon';
+	font-size: 18px;
+}
+
+.newsletter-email {
+	height: 50px;
+	border: solid #5B463D 1px;
+	border-radius: 10px;
+	padding-right: 70px;
+}
+
+.newsletter-email::placeholder {
+	color: #5B463D;
+	font-weight: 300;
+}
+
+.newsletter-email-button {
+	background-color: #5B463D;
+	width: 70px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

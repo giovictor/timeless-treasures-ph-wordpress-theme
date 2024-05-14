@@ -117,6 +117,9 @@ if ( ! function_exists( 'timeless_treasures_ph_setup' ) ) :
 
 		// Remove support for block templates.
 		remove_theme_support( 'block-templates' );
+
+		// Add theme support for custom logo.
+		add_theme_support( 'custom-logo' );
 	}
 endif;
 add_action( 'after_setup_theme', 'timeless_treasures_ph_setup' );
