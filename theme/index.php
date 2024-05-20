@@ -19,8 +19,10 @@ get_header();
 		<main id="main">
 
 			<?php
+				get_template_part('template-parts/homepage-sections/testimonials');
 				get_template_part('template-parts/homepage-sections/services');
 				get_template_part('template-parts/homepage-sections/about-us');
+				get_template_part('template-parts/homepage-sections/contact');
 			?>
 
 		</main><!-- #main -->

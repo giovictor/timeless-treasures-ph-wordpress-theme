@@ -13,7 +13,7 @@
 	<div class="container mx-auto">
 		<div class="grid grid-cols-12 gap-1 items-center">
 			<div class="col-span-4">
-				<img src="<?php echo get_template_directory_uri() . "/assets/images/footer-logo.jpg" ?>" />
+				<img src="<?php echo get_template_directory_uri() . "/assets/images/footer-logo.jpg"; ?>" />
 			</div>
 
 			<div class="col-span-4">
@@ -36,15 +36,15 @@
 				<span class="secondary-font mb-3 block">Follow us on:</span>
 				<div class="flex items-center mb-6">
 					<a href="#" target="_blank" class="mr-3">
-						<img src="<?php echo get_template_directory_uri() . "/assets/images/facebook-logo.png" ?>" />
+						<img src="<?php echo get_template_directory_uri() . "/assets/images/facebook-logo.png"; ?>" />
 					</a>
 
 					<a href="#" target="_blank" class="mr-3">
-						<img src="<?php echo get_template_directory_uri() . "/assets/images/instagram-logo.png" ?>" />
+						<img src="<?php echo get_template_directory_uri() . "/assets/images/instagram-logo.png"; ?>" />
 					</a>
 
 					<a href="#" target="_blank" class="mr-3">
-						<img src="<?php echo get_template_directory_uri() . "/assets/images/tiktok-logo.png" ?>" />
+						<img src="<?php echo get_template_directory_uri() . "/assets/images/tiktok-logo.png"; ?>" />
 					</a>
 				</div>
 

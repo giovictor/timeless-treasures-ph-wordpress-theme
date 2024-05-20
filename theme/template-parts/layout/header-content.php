@@ -47,7 +47,7 @@
 				endif;
 			?>
 
-			<button class="shop-now text-white rounded-full px-8 py-2 mt-24">Shop Now</button>
+			<button class="primary-button text-white rounded-full px-8 py-2 mt-24">Shop Now</button>
 		</div>
 	</div>
 </header><!-- #masthead -->

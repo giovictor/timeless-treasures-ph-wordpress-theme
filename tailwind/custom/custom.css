@@ -53,16 +53,44 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 	margin-right: 30%;
 }
 
-.shop-now {
+.primary-button {
 	background-color: #5B463D;
 	font-size: 18px;
 	transition: all ease-out 0.5s;
 }
 
-.shop-now:hover {
+.primary-button:hover {
 	background-color: #F7F1F1;
 	color: #5B463D;
-	border: solid #5B463D 3px;
+	border: solid #5B463D 1px;
+}
+
+#testimonials {
+	background-color: #E7E4E4;
+}
+
+#testimonials h3 {
+	color:#5B463D;
+	font-size: 54px;
+}
+
+.testimonial {
+	background-color: #F7F1F1;
+	border-radius: 70px;
+}
+
+.testimonial h4 {
+	color: #5B463D;
+	font-size: 30px;
+}
+
+.testimonial p {
+	color: #5B463D;
+	font-size: 20px;
+}
+
+.testimonial img {
+	top: -110px;
 }
 
 #services h3 {
@@ -110,6 +138,30 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 #about-us p {
 	color:#5B463D;
 	font-size: 30px;
+}
+
+#contact {
+	background-color: #D9D9D9;
+}
+
+.contact-img {
+	background-image: url('../theme/assets/images/contact-image.jpg');
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#contact h3 {
+	color:#5B463D;
+	font-size: 54px;
+}
+
+#contact p {
+	color:#5B463D;
+	font-size: 20px;
+}
+
+#contact input, #contact textarea {
+	border: solid #5B463D 1px;
 }
 
 #colophon {
