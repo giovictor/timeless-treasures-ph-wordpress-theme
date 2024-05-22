@@ -77,6 +77,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 .testimonial {
 	background-color: #F7F1F1;
 	border-radius: 70px;
+	height: 400px;
 }
 
 .testimonial h4 {
@@ -90,7 +91,10 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 }
 
 .testimonial img {
-	top: -110px;
+	height: 200px;
+	width: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #services h3 {
@@ -112,18 +116,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 
 .service:hover .overlay {
 	background-color: rgba(93, 72, 50, 0.9);
-}
-
-.service:nth-child(1) {
-	background-image: url('../theme/assets/images/customizable-gifts-and-souvenirs-bg.jpg');
-}
-
-.service:nth-child(2) {
-	background-image: url('../theme/assets/images/event-styling-bg.jpg');
-}
-
-.service:nth-child(3) {
-	background-image: url('../theme/assets/images/rentals-bg.jpg');
 }
 
 #about-us {
