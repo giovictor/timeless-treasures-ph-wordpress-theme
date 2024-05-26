@@ -74,10 +74,16 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 	font-size: 54px;
 }
 
+.testimonialsSwiper {
+	height: 600px;
+	width: 100%;
+}
+
 .testimonial {
 	background-color: #F7F1F1;
 	border-radius: 70px;
 	height: 400px;
+	margin-top: 150px;
 }
 
 .testimonial h4 {
@@ -102,11 +108,14 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 	font-size: 54px;
 }
 
+.servicesSwiper {
+	height: 640px;
+	width: 100%;
+}
+
 .service {
 	height: 594px;
-	color: #ffffff;
 	font-size: 36px;
-	border-radius: 80%;
 }
 
 .service .overlay {
@@ -196,4 +205,8 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 	width: 70px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #5B463D !important;
 }
