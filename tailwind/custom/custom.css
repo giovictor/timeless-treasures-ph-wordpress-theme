@@ -22,40 +22,10 @@ _tw is based on Underscores https://underscores.me/ and Varia https://github.com
 Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
 */
 
-#masthead {
-	background-image: url('../theme/assets/images/banner.jpg');
-}
-
-.color-layer {
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-.custom-logo-link {
-	display: inline-block;
-	width: 208px;
-	height: 191px;
-}
-
-.menu {
-	display: flex;
-}
-
-.menu .menu-item {
-	margin-right: 60px;
-	color: #F7F1F1;
-	font-size: 18px;
-}
-
-.site-description {
-	color: #F7F1F1;
-	font-size: 65px;
-	margin-left: 30%;
-	margin-right: 30%;
-}
-
+/* Shared custom stylings */
 .primary-button {
 	background-color: #5B463D;
-	font-size: 18px;
+	font-size: 14px;
 	transition: all ease-out 0.5s;
 }
 
@@ -65,146 +35,10 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 	border: solid #5B463D 1px;
 }
 
-#testimonials {
-	background-color: #E7E4E4;
-}
-
-#testimonials h3 {
-	color:#5B463D;
-	font-size: 54px;
-}
-
-.testimonialsSwiper {
-	height: 600px;
-	width: 100%;
-}
-
-.testimonial {
-	background-color: #F7F1F1;
-	border-radius: 70px;
-	height: 400px;
-	margin-top: 150px;
-}
-
-.testimonial h4 {
-	color: #5B463D;
-	font-size: 30px;
-}
-
-.testimonial p {
-	color: #5B463D;
-	font-size: 20px;
-}
-
-.testimonial img {
-	height: 200px;
-	width: 200px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#services h3 {
-	color:#5B463D;
-	font-size: 54px;
-}
-
-.servicesSwiper {
-	height: 640px;
-	width: 100%;
-}
-
-.service {
-	height: 594px;
-	font-size: 36px;
-}
-
-.service .overlay {
-	background-color: rgba(93, 72, 50, 0.65);
-	transition: all ease-in-out 0.5s;
-}
-
-.service:hover .overlay {
-	background-color: rgba(93, 72, 50, 0.9);
-}
-
-#about-us {
-	background-color: #F7F1F1;
-}
-
-#about-us h3 {
-	color:#5B463D;
-	font-size: 54px;
-}
-
-#about-us p {
-	color:#5B463D;
-	font-size: 30px;
-}
-
-#contact {
-	background-color: #D9D9D9;
-}
-
-.contact-img {
-	background-image: url('../theme/assets/images/contact-image.jpg');
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-}
-
-#contact h3 {
-	color:#5B463D;
-	font-size: 54px;
-}
-
-#contact p {
-	color:#5B463D;
-	font-size: 20px;
-}
-
-#contact input, #contact textarea {
-	border: solid #5B463D 1px;
-}
-
-#colophon {
-	background-color: #F7F1F1;
-	height: 643px;
-}
-
-.footer-menu {
-	height: 210px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.footer-menu > .menu-item {
-	margin-bottom: 15px;
-	color: #5B463D;
-	font-size: 18px;
-}
-
-.follow-us-on {
-	font-family: 'Krylon';
-	font-size: 18px;
-}
-
-.newsletter-email {
-	height: 50px;
-	border: solid #5B463D 1px;
-	border-radius: 10px;
-	padding-right: 70px;
-}
-
-.newsletter-email::placeholder {
-	color: #5B463D;
-	font-weight: 300;
-}
-
-.newsletter-email-button {
-	background-color: #5B463D;
-	width: 70px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
+@media only screen and (min-width: 640px) {
+	.primary-button {
+		font-size: 18px;
+	}
 }
 
 .swiper-pagination-bullet-active {

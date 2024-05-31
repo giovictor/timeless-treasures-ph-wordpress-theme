@@ -1,0 +1,39 @@
+#contact {
+	background-color: #D9D9D9;
+}
+
+.contact-img {
+	background-image: url('../theme/assets/images/contact-image.jpg');
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#contact h3 {
+	color:#5B463D;
+	font-size: 34px;
+}
+
+#contact p {
+	color:#5B463D;
+	font-size: 16px;
+}
+
+#contact input, #contact textarea {
+	border: solid #5B463D 1px;
+}
+
+@media only screen and (min-width: 480px) {
+	#contact h3 {
+		font-size: 44px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#contact h3 {
+		font-size: 54px;
+	}
+
+	#contact p {
+		font-size: 20px;
+	}
+}

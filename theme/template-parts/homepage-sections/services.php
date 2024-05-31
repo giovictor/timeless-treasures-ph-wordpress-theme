@@ -19,9 +19,9 @@
 	}
 ?>
 
-<section id="services" class="h-screen py-16">
+<section id="services" class="h-full py-8 sm:py-12 lg:py-24">
 	<div class="container mx-auto flex flex-col justify-center items-center">
-		<h3 class="secondary-font text-center mb-16">Services</h3>
+		<h3 class="secondary-font text-center mb-6">Services</h3>
 
 		<div class="swiper threeColumnSwiper servicesSwiper">
 			<div class="swiper-wrapper">

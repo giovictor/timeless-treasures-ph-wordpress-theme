@@ -1,0 +1,56 @@
+#services h3 {
+	color:#5B463D;
+	font-size: 34px;
+}
+
+.servicesSwiper {
+	height: 440px;
+	width: 100%;
+}
+
+.service {
+	height: 394px;
+	font-size: 36px;
+}
+
+.service .overlay {
+	background-color: rgba(93, 72, 50, 0.65);
+	transition: all ease-in-out 0.5s;
+}
+
+.service:hover .overlay {
+	background-color: rgba(93, 72, 50, 0.9);
+}
+
+@media only screen and (min-width: 480px) {
+	#services h3 {
+		font-size: 44px;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.servicesSwiper {
+		height: 540px;
+	}
+
+	.service {
+		height: 494px;
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#services h3 {
+		font-size: 54px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.servicesSwiper {
+		height: 640px;
+	}
+
+	.service {
+		height: 594px;
+	}
+}

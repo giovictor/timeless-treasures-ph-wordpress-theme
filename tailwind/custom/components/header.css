@@ -1,0 +1,90 @@
+#masthead {
+	background-image: url('../theme/assets/images/banner.jpg');
+}
+
+.color-layer {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.custom-logo-link {
+	display: inline-block;
+    width: 108px;
+	height: 91px;
+}
+
+.mainNav {
+	background-color: #5B463D;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu .menu-item {
+	color: #F7F1F1;
+	font-size: 12px;
+	padding: 10px 0;
+	padding-left: 2rem;
+}
+
+.site-description {
+	color: #F7F1F1;
+	font-size: 35px;
+}
+
+.mobileNavToggle {
+	right: 20%;
+}
+
+@media only screen and (min-width: 480px) {
+	.custom-logo-link {
+		width: 158px;
+		height: 141px;
+	}
+
+	.site-description {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.menu .menu-item {
+		font-size: 16px;
+	}
+
+	.custom-logo-link {
+		width: 208px;
+		height: 191px;
+	}
+
+	.mainNav {
+		background: none;
+	}
+
+	.menu {
+		flex-direction: row;
+	}
+
+	.menu .menu-item {
+		padding: 0;
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.menu .menu-item {
+		padding-right: 60px;
+	}
+
+	.site-description {
+		font-size: 65px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.site-description {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+}

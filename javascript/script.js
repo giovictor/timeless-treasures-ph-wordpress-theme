@@ -9,6 +9,7 @@
  * https://esbuild.github.io/
  */
 
+// Swiper
 import Swiper from 'swiper';
 import { Pagination, Autoplay } from 'swiper/modules';
 
@@ -17,7 +18,7 @@ import 'swiper/css/pagination';
 
  new Swiper(".threeColumnSwiper", {
 	modules: [Pagination, Autoplay],
-	slidesPerView: 3,
+	slidesPerView: 1,
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true
@@ -26,4 +27,30 @@ import 'swiper/css/pagination';
 		delay: 3000,
 		disableOnInteraction: false,
 	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 3
+		},
+        640: {
+			slidesPerView: 2
+		}
+	}
 });
+
+// Font Awesome
+import '@fortawesome/fontawesome-free/js/all.js'
+
+
+// custom scripts
+const mobileNavToggle = document.querySelector('.mobileNavToggle')
+const mainNav = document.querySelector('.mainNav')
+
+mobileNavToggle.addEventListener('click', () => {
+	let mainNavClassList = mainNav.classList
+
+	if(mainNavClassList.contains('hidden')) {
+		mainNavClassList.remove('hidden')
+	} else {
+		mainNavClassList.add('hidden')
+	}
+})
