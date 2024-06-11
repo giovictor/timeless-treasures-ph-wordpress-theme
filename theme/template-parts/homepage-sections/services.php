@@ -2,6 +2,9 @@
 	/**
 	 * Template part for displaying the services section in homepage
 	 */
+	$homePageId = get_page_by_title('home')->ID;
+	$servicesTitle = get_field('services_title') ? get_field('services_title') : get_field('services_title', $homePageId);
+	$servicesDescription = get_field('services_description') ? get_field('services_description') : get_field('services_description', $homePageId);
 
 	$services = get_posts(array(
 		'posts_per_page' => -1,
@@ -20,28 +23,33 @@
 ?>
 
 <section id="services" class="h-full py-8 sm:py-12 lg:py-24">
-	<div class="container mx-auto flex flex-col justify-center items-center">
-		<h3 class="secondary-font text-center mb-6">Services</h3>
-
-		<div class="swiper threeColumnSwiper servicesSwiper">
-			<div class="swiper-wrapper">
-				<?php
-					foreach($data as $row) {
-				?>
-					<div class="swiper-slide">
-						<div class="service text-white mx-4 flex justify-center items-center secondary-font relative rounded-3xl bg-cover bg-no-repeat bg-center cursor-pointer" style="background-image: url(<?php echo $row['bg_image'] ?>)">
-							<div class="overlay absolute w-full h-full top-0 left-0 rounded-3xl"></div>
-							<h4 class="text-center relative z-10 px-16"><?php echo $row['service']; ?></h4>
-						</div>
+	<div class="container mx-auto">
+		<div class="grid grid-cols-12 gap-1">
+			<div class="col-span-12 md:col-span-6 mx-8 sm:mx-16">
+				<div class="swiper oneColumnSwiper servicesSwiper">
+					<div class="swiper-wrapper">
+						<?php
+							foreach($data as $row) {
+						?>
+							<div class="swiper-slide">
+								<div class="service text-white mx-4 flex justify-center items-center secondary-font relative bg-cover bg-no-repeat bg-center cursor-pointer" style="background-image: url(<?php echo $row['bg_image'] ?>)">
+									<div class="overlay absolute w-full h-full top-0 left-0"></div>
+									<h4 class="text-center relative z-10 px-16"><?php echo $row['service']; ?></h4>
+								</div>
+							</div>
+						<?php
+							}
+						?>
 					</div>
-				<?php
-					}
-				?>
+
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 
-			<div class="swiper-pagination"></div>
+			<div class="col-span-12 md:col-span-6 mx-8 sm:mx-16 mb-8 sm:mb-16 lg:mb-0">
+				<h3 class="secondary-font mb-4 sm:mb-8"><?php echo $servicesTitle; ?></h3>
+				<p class="font-light"><?php echo $servicesDescription; ?></p>
+			</div>
 		</div>
-
-		<button class="primary-button text-white rounded-full px-8 py-2 mt-4">Shop Now</button>
 	</div>
 </section>

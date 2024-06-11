@@ -8,56 +8,48 @@
 }
 
 .testimonialsSwiper {
-	height: 450px;
+	height: 500px;
 	width: 100%;
 }
 
 .testimonial {
-	background-color: #F7F1F1;
 	border-radius: 70px;
-	height: 300px;
-	margin-top: 100px;
+	height: 400px;
 }
 
-.testimonial h4 {
-	color: #5B463D;
-	font-size: 20px;
-}
-
-.testimonial p {
+.testimonial-text {
 	color: #5B463D;
 	font-size: 16px;
+}
+
+.testimonial-customer {
+	color: #5B463D;
+	font-size: 12px;
 }
 
 .testimonial img {
 	height: 150px;
 	width: 150px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 @media only screen and (min-width: 480px) {
 	#testimonials h3 {
 		font-size: 44px;
 	}
+
+	.testimonial img {
+		height: 200px;
+		width: 200px;
+	}
 }
 
 @media only screen and (min-width: 640px) {
-	.testimonialsSwiper {
-		height: 600px;
+	.testimonial-text {
+		font-size: 18px;
 	}
 
-	.testimonial {
-		height: 400px;
-		margin-top: 150px;
-	}
-
-	.testimonial h4 {
-		font-size: 30px;
-	}
-
-	.testimonial p {
-		font-size: 20px;
+	.testimonial-customer {
+		font-size: 14px;
 	}
 }
 
@@ -66,8 +58,21 @@
 		font-size: 54px;
 	}
 
-	.testimonial img {
-		height: 200px;
-		width: 200px;
+	.testimonialsSwiper {
+		height: 400px;
+	}
+
+	.testimonial {
+		height: 300px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.testimonial-text {
+		font-size: 24px;
+	}
+
+	.testimonial-customer {
+		font-size: 18px;
 	}
 }

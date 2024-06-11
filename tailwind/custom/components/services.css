@@ -3,6 +3,11 @@
 	font-size: 34px;
 }
 
+#services p {
+	color:#5B463D;
+	font-size: 16px;
+}
+
 .servicesSwiper {
 	height: 440px;
 	width: 100%;
@@ -42,6 +47,11 @@
 @media only screen and (min-width: 768px) {
 	#services h3 {
 		font-size: 54px;
+	}
+
+	#services p {
+		color:#5B463D;
+		font-size: 20px;
 	}
 }
 

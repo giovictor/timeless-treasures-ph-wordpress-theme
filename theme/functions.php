@@ -198,3 +198,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+add_filter( 'wpcf7_autop_or_not', '__return_false' );

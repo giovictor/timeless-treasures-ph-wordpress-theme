@@ -37,6 +37,19 @@ import 'swiper/css/pagination';
 	}
 });
 
+new Swiper(".oneColumnSwiper", {
+	modules: [Pagination, Autoplay],
+	slidesPerView: 1,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true
+	},
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	}
+});
+
 // Font Awesome
 import '@fortawesome/fontawesome-free/js/all.js'
 
