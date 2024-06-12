@@ -22,34 +22,28 @@
 	}
 ?>
 
-<section id="services" class="h-full py-8 sm:py-12 lg:py-24">
-	<div class="container mx-auto">
-		<div class="grid grid-cols-12 gap-1">
-			<div class="col-span-12 md:col-span-6 mx-8 sm:mx-16">
-				<div class="swiper oneColumnSwiper servicesSwiper">
-					<div class="swiper-wrapper">
-						<?php
-							foreach($data as $row) {
-						?>
-							<div class="swiper-slide">
-								<div class="service text-white mx-4 flex justify-center items-center secondary-font relative bg-cover bg-no-repeat bg-center cursor-pointer" style="background-image: url(<?php echo $row['bg_image'] ?>)">
-									<div class="overlay absolute w-full h-full top-0 left-0"></div>
-									<h4 class="text-center relative z-10 px-16"><?php echo $row['service']; ?></h4>
-								</div>
-							</div>
-						<?php
-							}
-						?>
+<section id="services" class="h-full py-8 sm:py-12 lg:py-16">
+	<div class="container mx-auto flex flex-col justify-center items-center">
+		<h3 class="secondary-font mb-8 sm:mb-10"><?php echo $servicesTitle; ?></h3>
+		<div class="font-light mx-8 sm:mx-16 lg:mx-20 mb-8 sm:mb-16 text-center"><?php echo $servicesDescription; ?></div>
+
+		<div class="swiper threeColumnSwiper servicesSwiper">
+			<div class="swiper-wrapper">
+				<?php
+					foreach($data as $row) {
+				?>
+					<div class="swiper-slide">
+						<div class="service text-white mx-4 flex justify-center items-center secondary-font relative bg-cover bg-no-repeat bg-center cursor-pointer" style="background-image: url(<?php echo $row['bg_image'] ?>)">
+							<div class="overlay absolute w-full h-full top-0 left-0"></div>
+							<h4 class="text-center relative z-10 px-16"><?php echo $row['service']; ?></h4>
+						</div>
 					</div>
-
-					<div class="swiper-pagination"></div>
-				</div>
+				<?php
+					}
+				?>
 			</div>
 
-			<div class="col-span-12 md:col-span-6 mx-8 sm:mx-16 mb-8 sm:mb-16 lg:mb-0">
-				<h3 class="secondary-font mb-4 sm:mb-8"><?php echo $servicesTitle; ?></h3>
-				<p class="font-light"><?php echo $servicesDescription; ?></p>
-			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 	</div>
 </section>

@@ -7,12 +7,12 @@
 	$aboutUsDescription = get_field('about_us_description') ? get_field('about_us_description') : get_field('about_us_description', $homePageId);
 ?>
 
-<section id="about-us" class="h-full py-8 sm:py-12 lg:py-24">
+<section id="about-us" class="h-full py-8 sm:py-12 lg:py-16">
 	<div class="container mx-auto">
 		<div class="grid grid-cols-12 gap-1">
 			<div class="col-span-12 lg:col-span-6 mx-8 sm:mx-16 mb-8 sm:mb-16 lg:mb-0">
-				<h3 class="secondary-font mb-4 sm:mb-8"><?php echo $aboutUsTitle; ?></h3>
-				<p class="font-light"><?php echo $aboutUsDescription; ?></p>
+				<h3 class="secondary-font mb-4 sm:mb-8 text-center lg:text-left"><?php echo $aboutUsTitle; ?></h3>
+				<div class="font-light text-center lg:text-left"><?php echo $aboutUsDescription; ?></div>
 			</div>
 
 			<div class="col-span-12 lg:col-span-6 mx-8 sm:mx-16">

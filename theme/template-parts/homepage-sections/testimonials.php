@@ -18,30 +18,26 @@
 		$testimonialText = strip_tags($testimonial->post_content);
 		$data[] = [
 			'customer'    => $testimonial->post_title,
-			'testimonial' => strlen($testimonialText) > 300 ? substr($testimonialText, 0, 300) . '...' : $testimonialText,
+			'testimonial' => $testimonialText,
 			'image'       => get_the_post_thumbnail_url($testimonial->ID)
 		];
 	}
 ?>
 
-<section id="testimonials" class="h-full py-8 sm:py-12 lg:py-24">
+<section id="testimonials" class="h-full py-8 sm:py-12 lg:py-16">
 	<div class="container mx-auto flex flex-col justify-center items-center">
 		<h3 class="secondary-font text-center mb-0 md:mb-8"><?php echo $testimonialTitle; ?></h3>
 
-		<div class="swiper oneColumnSwiper testimonialsSwiper">
+		<div class="swiper threeColumnSwiper testimonialsSwiper">
 			<div class="swiper-wrapper">
 				<?php
 					foreach($data as $row) {
 				?>
 					<div class="swiper-slide">
-						<div class="testimonial px-10 md:px-16 cursor-pointer grid grid-cols-12 gap-0 md:gap-12 items-center">
-							<div class="col-span-12 md:col-span-4 lg:col-span-3 flex justify-center mt-0 sm:mt-4">
-								<img class="rounded-full" src="<?php echo $row['image']; ?>" />
-							</div>
-							<div class="col-span-12 md:col-span-8 lg:col-span-9">
-								<p class="testimonial-text font-medium italic mb-4"><?php echo '"' . $row['testimonial'] . '"'; ?></p>
-								<p class="testimonial-customer font-light text-right"><?php echo '- ' .$row['customer']; ?></p>
-							</div>
+						<div class="testimonial relative mx-4 pb-16 pt-24 md:pt-32 cursor-pointer">
+							<img class="absolute rounded-full top-0" src="<?php echo $row['image']; ?>" />
+							<h4 class="testimonial-customer text-center mb-4 px-6"><?php echo $row['customer']; ?></h4>
+							<p class="testimonial-text font-medium italic text-center mb-4 px-12"><?php echo $row['testimonial']; ?></p>
 						</div>
 					</div>
 				<?php
