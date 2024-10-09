@@ -1,5 +1,5 @@
 #testimonials {
-	background-color: #E7E4E4;
+	background-color: #fbfbfb;
 }
 
 #testimonials h3 {
@@ -14,7 +14,7 @@
 
 .testimonial {
 	background-color: #F7F1F1;
-	height: 300px;
+	height: 350px;
 	margin-top: 100px;
 }
 
@@ -37,6 +37,10 @@
 	transform: translate(-50%, -50%);
 }
 
+.rating {
+	color: #FFBA70;
+}
+
 @media only screen and (min-width: 480px) {
 	#testimonials h3 {
 		font-size: 44px;
@@ -45,11 +49,11 @@
 
 @media only screen and (min-width: 640px) {
 	.testimonialsSwiper {
-		height: 600px;
+		height: 650px;
 	}
 
 	.testimonial {
-		height: 400px;
+		height: 450px;
 		margin-top: 150px;
 	}
 

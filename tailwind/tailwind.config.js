@@ -1,4 +1,4 @@
-// Set the Preflight flag based on the build target.
+ // Set the Preflight flag based on the build target.
 const includePreflight = 'editor' === process.env._TW_TARGET ? false : true;
 
 module.exports = {

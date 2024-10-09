@@ -16,7 +16,7 @@
 	font-size: 16px;
 }
 
- .contact-form-text, .contact-form-textarea {
+ .contact-form-text, .contact-form-textarea, .contact-form-dropdown {
 	color: #F7F1F1;
 	border: solid #F7F1F1 1px;
 	font-size: 16px;
@@ -31,11 +31,11 @@
 	border-radius: 0.75rem;
 }
 
-.contact-form-text {
+.contact-form-text, .contact-form-dropdown {
 	height: 2.5rem;
 }
 
-.contact-form-text::placeholder, .contact-form-textarea::placeholder {
+.contact-form-text::placeholder, .contact-form-textarea::placeholder, .contact-form-dropdown::placeholder {
 	color: #70645F;
 	font-size: 16px;
 }

@@ -15,6 +15,7 @@
 	$data = [];
 
 	foreach($testimonials as $testimonial) {
+		// echo json_encode(get_post_meta($testimonial->ID, 'rating'));
 		$testimonialText = strip_tags($testimonial->post_content);
 		$data[] = [
 			'customer'    => $testimonial->post_title,
@@ -36,7 +37,11 @@
 					<div class="swiper-slide">
 						<div class="testimonial relative mx-4 pb-16 pt-24 md:pt-32 cursor-pointer">
 							<img class="absolute rounded-full top-0" src="<?php echo $row['image']; ?>" />
-							<h4 class="testimonial-customer text-center mb-4 px-6"><?php echo $row['customer']; ?></h4>
+							<div class="flex justify-center">
+								<i class="fa-solid fa-star rating"></i>
+								<i class="fa-solid fa-star-half-stroke rating"></i>
+							</div>
+							<h4 class="testimonial-customer text-center my-4 px-6"><?php echo $row['customer']; ?></h4>
 							<p class="testimonial-text font-medium italic text-center mb-4 px-12"><?php echo $row['testimonial']; ?></p>
 						</div>
 					</div>
